@@ -102,7 +102,6 @@ footer {
 }
 
 #contato-form fieldset input, #contato-form fieldset textarea {
-    border-radius: .2rem / .3rem;
     width: 65%;
     padding: .25rem;
     float: right;
@@ -111,11 +110,14 @@ footer {
     font-weight: 300;
     border: none;
     font-family: inherit;
+    outline: solid .05rem #ded5d5;
+    transition: border-radius .08s ease-out;
 }
 
 #contato-form fieldset input:focus-visible, #contato-form fieldset textarea:focus-visible {
     border: none;
     outline: solid .05rem black;
+    border-radius: .2rem / .3rem;
 }
 
 #contato-form fieldset textarea {
