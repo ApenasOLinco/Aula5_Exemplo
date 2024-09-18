@@ -124,7 +124,13 @@ footer {
     resize: vertical;
 }
 
-#contato-form fieldset input[type="button"]:active {
+button {
+    width: 65%;
+    height: 30px;
+    float: right;
+}
+
+button:active {
     box-shadow: inset rgba(200, 200, 200, 10) 2px 2px;
 }
 
