@@ -96,11 +96,13 @@ footer {
     padding-top: .5rem;
 }
 
-#contato-form fieldset {
-    display: block;
-    border: none;
+#contato-img img {
+    width: 100%;
+    height: auto;
+    max-width: 80%;
 }
 
+/* Fieldsets, Inputs & Labels */
 #contato-form fieldset input, #contato-form fieldset textarea {
     width: 65%;
     padding: .25rem;
@@ -122,8 +124,42 @@ footer {
 
 #contato-form fieldset textarea {
     resize: vertical;
+    min-height: 1lh;
+    max-height: 8lh;
 }
 
+#contato-form fieldset label {
+    float: left;
+    vertical-align: middle;
+}
+
+#contato-form fieldset {
+    display: block;
+    border: none;
+    text-align: left;
+}
+
+#seletores-fieldset {
+    margin: 1em;
+    display: block;
+    outline: dotted 1px;
+    border-radius: .2rem / .3rem;
+    outline: dashed .02rem;
+}
+
+#seletores-fieldset input, #seletores-fieldset label {
+    float: none;
+}
+
+/* Checkboxes */
+#seletores-fieldset input[type="checkbox"] {
+    appearance: none;
+    width: 1em;
+    height: 1em;   
+    background: transparent;
+}
+
+/* Botões */
 button {
     width: 65%;
     height: 30px;
@@ -132,15 +168,4 @@ button {
 
 button:active {
     box-shadow: inset rgba(200, 200, 200, 10) 2px 2px;
-}
-
-#contato-form fieldset label {
-    float: left;
-    vertical-align: middle;
-}
-
-#contato-img img {
-    width: 100%;
-    height: auto;
-    max-width: 80%;
 }
