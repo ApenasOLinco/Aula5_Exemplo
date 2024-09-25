@@ -89,7 +89,6 @@ footer {
     vertical-align: middle;
     width: 49%;
     height: 100%;
-    background-color: aliceblue;
 }
 
 #contato-form {
@@ -135,25 +134,24 @@ footer {
     vertical-align: middle;
 }
 
-#contato-form fieldset {
+#contato-form fieldset:not(#seletores-fieldset) {
+    padding: .5rem;
     display: block;
     border: none;
     text-align: left;
 }
 
 #seletores-fieldset {
-    margin: 1em;
-    display: block;
+    margin: .8em;
     border-radius: .2rem / .3rem;
-    outline: dashed .02rem;
+    background: #e7e7e7;
+    border: dotted .02rem #ded5d5;
 }
 
 /* Checkboxes */
 #seletores-fieldset input[type="checkbox"] {
-    appearance: none;
     width: 1em;
     height: 1em;   
-    background: transparent;
 }
 
 /* Botões */
