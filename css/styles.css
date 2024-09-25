@@ -103,7 +103,9 @@ footer {
 }
 
 /* Fieldsets, Inputs & Labels */
-#contato-form fieldset input, #contato-form fieldset textarea {
+#contato-form fieldset:not(#seletores-fieldset) input, 
+#contato-form fieldset:not(#seletores-fieldset) textarea
+{
     width: 65%;
     padding: .25rem;
     float: right;
@@ -128,7 +130,7 @@ footer {
     max-height: 8lh;
 }
 
-#contato-form fieldset label {
+#contato-form fieldset:not(#seletores-fieldset) label {
     float: left;
     vertical-align: middle;
 }
@@ -142,13 +144,8 @@ footer {
 #seletores-fieldset {
     margin: 1em;
     display: block;
-    outline: dotted 1px;
     border-radius: .2rem / .3rem;
     outline: dashed .02rem;
-}
-
-#seletores-fieldset input, #seletores-fieldset label {
-    float: none;
 }
 
 /* Checkboxes */
